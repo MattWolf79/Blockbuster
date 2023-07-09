@@ -1,0 +1,22 @@
+.Carrito {
+    justify-self: start;
+    font-size: 25px;
+    margin-left: 10px;
+    color: white;
+    margin-top: 4vh;
+    cursor: pointer;
+    text-decoration: none;
+    float: left;
+    /* position:inherit; */
+    display: contents;
+    background-size: center;
+    background-position: center;
+  }
+  @media screen and (max-width:480px){
+    .Carrito{
+      display: none;
+    }
+    .bi bi-minecart{      
+      display: flex;
+    }
+  }

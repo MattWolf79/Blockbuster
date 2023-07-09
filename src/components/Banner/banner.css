@@ -1,0 +1,35 @@
+.Banner{
+    background-size: cover;
+    background-position: center;
+    font-size: 25px;
+    height: 100vh;
+    color: black;
+    margin:0;
+    cursor: pointer;
+    text-decoration: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url("../../img/fondoNetflix2.png");  
+  }
+  .banner-container{
+    text-align: center;
+    padding: 15% 0;
+  }
+  .Banner h1{
+    margin: 0;
+    color: blue;
+    background-position: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 62px;
+    align-content: center;
+  }
+  .Banner p{
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    align-content: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  *{
+    padding: 0;
+    margin: 0;
+  }

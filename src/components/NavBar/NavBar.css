@@ -1,0 +1,160 @@
+.NavBar{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding:0;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  background-color: black ;
+  color:white;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+.NavBarContainer{  
+  padding: 0;  
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.NavBar-ul{  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.h2{
+  color: white;
+  font-weight: 400;
+  span{
+    font-weight: bold;
+  }
+}
+.a{
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+.NavBar-svg{
+  fill: white;
+  width: 2em;
+  height: 2em;
+}
+.form-control-me-2{  
+  fill: white;  
+  width: 10em;
+  height: auto;
+}
+.NavBar-button{
+  background-color:red ;
+  /* display:none; */
+  /* width: 10%; */
+  /* padding: 0%; */
+  margin-right: unset;
+  object-fit: cover;
+  flex-flow: column nowrap;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  color:white
+  /* justify-content: space-between; */
+};
+.dropdown-item{  
+  margin: 0 .5em;
+}
+.dropdown-menu{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown-divider{
+  margin: 0 .5em;
+  color: aliceblue;
+}
+@media screen and (max-width:640px) {
+  .NavBar-button{
+    display: none;
+    background-color:red;
+  }
+  .NavBar{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .NavBar-text{ 
+    fill: white;
+    display: none;
+    width: 1em;
+    height: auto;
+  }
+  .NavBar-ul{
+    flex-direction: column;
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    
+  }  
+}
+.NavBar-li{
+  margin: 0 .5em;
+  display: flex;
+}
+.Cabecera{
+  width:100%;
+  background-color: black;
+  padding:1em;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  color:white;
+}
+.Cabecera-button{
+  display:none;
+  cursor: pointer;
+}
+.Cabecera-ul{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media screen and (max-width:480px){
+
+  .Cabecera-button{
+      display: flex;
+  }
+  .Cabecera-nav{
+      width:100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      height:0vh;
+      opacity: 0;
+      overflow: hidden;
+      transition: all .5s ease;
+  }
+  .Cabecera-nav.isActive{
+      height:50vh;
+      opacity: 1;
+  }
+  .Cabecera-ul{
+      flex-direction: column-reverse  ;
+  }
+  .Cabecera-li{
+      margin: .5em 0;
+  }
+}
+  
