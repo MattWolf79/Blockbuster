@@ -1,4 +1,4 @@
-import "./Banner.css"
+import "./banner.css"
 import { useState } from "react";
 import { ItemListContainer } from '../ItemListContainer/ItemListContainer';
 const Banner = () => {  
